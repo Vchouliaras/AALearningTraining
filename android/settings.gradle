@@ -1,0 +1,3 @@
+rootProject.name = 'LearningActors'
+
+include ':app'
