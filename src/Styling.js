@@ -23,31 +23,38 @@ class Styling extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    // Normally you will use flex: 1,
-    // which tells a component to fill
-    // all available space, shared evenly
-    // amongst each other component with
-    // the same parent
-    // Parent should have a flex, or height
     height: '100%',
     backgroundColor: '#F5FCFF',
-    // flexDirection: 'row',
   },
   box1: {
-    flex: 1,
-    backgroundColor: 'green',
-    justifyContent: 'center',
-    alignItems: 'center'
+    width: 100,
+    height: 100,
+    position: 'absolute',
+    right: 0,
+    backgroundColor: 'green'
   },
   box2: {
-    flex: 1,
+    width: 100,
+    height: 100,
+    position: 'absolute',
+    right: 10,
+    zIndex: 2,
     backgroundColor: 'yellow'
   },
   box3: {
-    flex: 3,
+    width: 100,
+    height: 100,
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    marginTop: -50,
+    marginLeft: -50,
     backgroundColor: 'cyan',
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderRightColor: 'black',
+    borderRightWidth: 3,
+    shadowOffset:{  width: 10,  height: 10,  },
+    shadowColor: 'black',
+    shadowOpacity: 1.0,
   }
 })
 
