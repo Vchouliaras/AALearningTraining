@@ -5,13 +5,13 @@ import {Platform, StyleSheet, Text, View} from 'react-native'
 // import MessageQueue from 'react-native/Libraries/BatchedBridge/MessageQueue'
 // MessageQueue.spy(true)
 
-import Styling from './Styling'
+import Animations from './Animations'
 
 class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Styling />
+        <Animations />
       </View>
     )
   }
